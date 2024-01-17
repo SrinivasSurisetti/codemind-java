@@ -1,0 +1,9 @@
+class Example3{
+	public static void main(String[] args)
+	{
+		float x =  1.2f;  //Float value	
+		System.out.println(x);
+		long y = 134563754353l;  //Long value
+		System.out.print(y);  
+	} 
+}
