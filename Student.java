@@ -1,0 +1,26 @@
+class Student{
+    int age;
+    String name;
+    String rollNumber;
+    static String clgName = "Aditya"; // Static variables can be accessed with both class and object
+    void prntDetails(){
+        System.out.println(age+" "+name+" "+rollNumber);  // instance method can only be accessed with instance only
+        }
+    static void prntClgName(){
+        System.out.println(clgName); // static method which can accessed with class name and object
+    }
+}
+public class Scope{
+    public static void main(String args[]){
+        System.out.println(Student.clgName); 
+        
+        Student s1 = new Student();
+        System.out.println(s1.clgName);
+        Student.prntClgName();
+        s1.prntClgName();
+        s1.age=32;
+        s1.name="Dhanu";
+        s1.rollNumber="22MH1A05I0";
+        s1.prntDetails();
+    }
+}
